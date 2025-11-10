@@ -266,9 +266,8 @@
         Demonstration: Society of Mind
       </h2>
       <p>
-        Marvin Minsky's idea were foundational. Here is a 3D visualization of his 
-        </strong>Society of Mind</strong>concept, showing how independent Agents connect via **K-lines**
-        (connections) to solve complex problems.
+        Marvin Minsky's idea were foundational. 
+        Here is a 3D visualization showing how independent Agents connect via "K-lines" (connections) to solve complex problems.
       </p>
 
       <!-- The key to integration: using an Iframe -->
