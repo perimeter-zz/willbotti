@@ -260,26 +260,7 @@
       </div>
     </div>
 
-    <!-- NEW SECTION FOR MINSKY SIMULATOR INTEGRATION -->
-    <div class="section simulator-container">
-      <h2>
-        Demonstration: Society of Mind
-      </h2>
-      <p>
-        Marvin Minsky's ideas were foundational. 
-        Here is a 3D visualization showing how independent Agents connect via "K-lines" (connections) to solve complex problems.
-      </p>
-
-      <!-- The key to integration: using an Iframe -->
-      <iframe 
-        id="minsky-simulator"
-        class="simulator-iframe"
-        src="som_sim.html" 
-        title="Minsky Society of Mind 3D Simulator"
-        allowfullscreen
-      ></iframe>
-    </div>
-    <!-- END NEW SECTION -->
+   
 
     <div class="section">
       <h2>Services</h2>
@@ -310,6 +291,27 @@
       <p>Experience ChatBotti in action. See how AI can transform your customer interactions.</p>
       <a href="https://levelblest.com/chatbotti" class="cta-btn">Try ChatBotti Demo</a>
     </div>
+
+ <!-- NEW SECTION FOR MINSKY SIMULATOR INTEGRATION -->
+    <div class="section simulator-container">
+      <h2>
+        Demonstration: Society of Mind
+      </h2>
+      <p>
+        Marvin Minsky's ideas were foundational. 
+        Here is a 3D visualization showing how independent Agents connect via "K-lines" (connections) to solve complex problems.
+      </p>
+
+      <!-- The key to integration: using an Iframe -->
+      <iframe 
+        id="minsky-simulator"
+        class="simulator-iframe"
+        src="som_sim.html" 
+        title="Minsky Society of Mind 3D Simulator"
+        allowfullscreen
+      ></iframe>
+    </div>
+    <!-- END NEW SECTION -->
 
     <div class="section">
       <h2>Other Projects</h2>
