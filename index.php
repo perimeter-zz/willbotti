@@ -171,6 +171,20 @@
       color: #666;
     }
 
+    /* Simulator Integration Styles */
+    .simulator-container {
+        padding: 0; /* Remove padding for full iframe width */
+        overflow: hidden; /* Hide iframe scrollbars if they appear */
+    }
+
+    .simulator-iframe {
+        width: 100%;
+        height: 600px; /* Set a fixed height for the 3D view */
+        border: 4px solid #2c3e50;
+        border-radius: 8px;
+        box-shadow: 0 8px 30px rgba(0,0,0,0.25);
+    }
+
     /* Footer */
     footer {
       background: #2c3e50;
@@ -210,6 +224,10 @@
       .about-photo {
         margin: 0 auto 20px;
       }
+      
+      .simulator-iframe {
+        height: 400px; /* Shorter height on mobile */
+      }
     }
   </style>
 </head>
@@ -241,6 +259,28 @@
         </div>
       </div>
     </div>
+
+    <!-- NEW SECTION FOR MINSKY SIMULATOR INTEGRATION -->
+    <div class="section simulator-container">
+      <h2>
+        Demonstration: Society of Mind
+      </h2>
+      <p>
+        My work with Marvin Minsky was foundational. Here is a 3D visualization of his 
+        **Society of Mind** concept, showing how independent Agents connect via **K-lines**
+        (connections) to solve complex problems.
+      </p>
+
+      <!-- The key to integration: using an Iframe -->
+      <iframe 
+        id="minsky-simulator"
+        class="simulator-iframe"
+        src="som_sim.html" 
+        title="Minsky Society of Mind 3D Simulator"
+        allowfullscreen
+      ></iframe>
+    </div>
+    <!-- END NEW SECTION -->
 
     <div class="section">
       <h2>Services</h2>
