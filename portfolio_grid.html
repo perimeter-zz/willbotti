@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video Grid Component</title>
+    <!-- Load Tailwind CSS for modern styling -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        /* Custom styles to mimic the original look/feel but ensuring responsiveness and aspect ratio */
+        .grid-item-container {
+            /* Ensures the links fill the entire card area */
+            display: block;
+            height: 100%;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .grid-item-container:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+        }
+
+        .image-wrapper {
+            /* Creates a fixed aspect ratio for images */
+            position: relative;
+            padding-top: 100%; /* 1:1 Aspect Ratio (Square) */
+            overflow: hidden;
+        }
+
+        .image-wrapper img {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover; /* Ensures the image covers the area without distortion */
+        }
+    </style>
+</head>
+<body class="bg-gray-50 font-sans">
+
+    <section class="py-16 md:py-24">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-4xl font-bold text-center text-gray-800 mb-12">
+                Featured Projects & Collaborations
+            </h2>
+            
+            <p class="text-xl text-center text-gray-500 mb-16 max-w-3xl mx-auto">
+                These examples showcase various aspects of my work, from creative production to technical implementation.
+            </p>
+
+            <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-6 md:gap-8">
+                
+                <!-- Project 1: heyitsgenniefaye (Example Link) -->
+                <div class="bg-white rounded-xl shadow-lg hover:shadow-xl transition duration-300 overflow-hidden">
+                    <a href="https://www.instagram.com/p/DFbrBmmRApb/" target="_blank" class="grid-item-container">
+                        <div class="image-wrapper">
+                            <!-- NOTE: Replace this placeholder URL with your actual image path -->
+                            <img src="https://placehold.co/400x400/81C784/ffffff?text=Project+1" alt="heyitsgenniefaye">
+                        </div>
+                        <div class="p-4 text-center">
+                            <div class="text-sm font-semibold text-gray-700 truncate">AI Design Prototype</div>
+                            <div class="text-xs text-blue-600 mt-1">View Project</div>
+                        </div>
+                    </a>
+                </div>
+
+                <!-- Project 2: taylor_thatdancer (Example Link) -->
+                <div class="bg-white rounded-xl shadow-lg hover:shadow-xl transition duration-300 overflow-hidden">
+                    <a href="https://youtube.com/shorts/TSY1cmHDXr4?si=I0yjZ39Hn5oR344x" target="_blank" class="grid-item-container">
+                        <div class="image-wrapper">
+                            <img src="https://placehold.co/400x400/64B5F6/ffffff?text=Project+2" alt="taylor_thatdancer">
+                        </div>
+                        <div class="p-4 text-center">
+                            <div class="text-sm font-semibold text-gray-700 truncate">ML Model Training</div>
+                            <div class="text-xs text-blue-600 mt-1">View Demo</div>
+                        </div>
+                    </a>
+                </div>
+
+                <!-- Project 3: laufey (Example Link) -->
+                <div class="bg-white rounded-xl shadow-lg hover:shadow-xl transition duration-300 overflow-hidden">
+                    <a href="https://www.instagram.com/p/CBTiBxdgIqR/" target="_blank" class="grid-item-container">
+                        <div class="image-wrapper">
+                            <img src="https://placehold.co/400x400/FFB74D/ffffff?text=Project+3" alt="laufey">
+                        </div>
+                        <div class="p-4 text-center">
+                            <div class="text-sm font-semibold text-gray-700 truncate">Client Dashboard UI</div>
+                            <div class="text-xs text-blue-600 mt-1">View Case Study</div>
+                        </div>
+                    </a> 
+                </div>
+                
+                <!-- Project 4: Lovin' Arms (Example Link) -->
+                <div class="bg-white rounded-xl shadow-lg hover:shadow-xl transition duration-300 overflow-hidden">
+                    <a href="https://www.instagram.com/levelblest/reel/DOWhcwADzuB/" target="_blank" class="grid-item-container">
+                        <div class="image-wrapper">
+                            <img src="https://placehold.co/400x400/E57373/ffffff?text=Project+4" alt="Lovin' Arms">
+                        </div>
+                        <div class="p-4 text-center">
+                            <div class="text-sm font-semibold text-gray-700 truncate">Level Blest Book Ad</div>
+                            <div class="text-xs text-blue-600 mt-1">View Reel</div>
+                        </div>
+                    </a>
+                </div>
+              
+                <!-- Project 5: DJ Gianni B (Example Link) -->
+                <div class="bg-white rounded-xl shadow-lg hover:shadow-xl transition duration-300 overflow-hidden">
+                    <a href="https://www.youtube.com/playlist?list=OLAK5uy_l4zXiFcUwd3W9ylXXeVPKrI8mBqyDygkk" target="_blank" class="grid-item-container">
+                        <div class="image-wrapper">
+                            <img src="https://placehold.co/400x400/BA68C8/ffffff?text=Project+5" alt="Hacker">
+                        </div>
+                        <div class="p-4 text-center">
+                            <div class="text-sm font-semibold text-gray-700 truncate">Technical Consulting</div>
+                            <div class="text-xs text-blue-600 mt-1">View Details</div>
+                        </div>
+                    </a>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+</body>
+</html>
