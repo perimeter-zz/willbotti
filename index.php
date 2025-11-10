@@ -233,7 +233,7 @@
         <div class="about-text">
           <div class="mit-badge">🏛️ MIT Alumnus</div>
           
-          <p>I'm <strong>Will Botti</strong>, an AI engineer with many years of experience in artificial intelligence—including game development, creative AI, and practical business solutions.</p>
+          <p>I'm <strong>Will Botti</strong>, a highly skilled AI engineer with extensive technical and people skills.</p>
           
           <p>I completed my undergraduate thesis <em>"Computer-Aided Improvisation"</em> under <span class="highlight">Marvin Minsky</span>, one of the founding fathers of AI and co-founder of MIT's AI Lab.</p>
           
